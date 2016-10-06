@@ -5,8 +5,8 @@ import sys
 import time
 
 parser = argparse.ArgumentParser(description='Servers Spawn Script')
-parser.add_argument('-p', '--port', type=int, help='Starting port number for the servers, increments port # with each server', default=5001)
-parser.add_argument('-n', '--number', type=int, help='Number of servers to spawn', default=1)
+parser.add_argument('-p', '--port', type=int, help='Starting port number for the servers, increments port # with each server', default=5010)
+parser.add_argument('-n', '--number', type=int, help='Number of servers to spawn', default=5)
 
 args = parser.parse_args()
 
