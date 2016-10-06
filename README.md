@@ -2,16 +2,16 @@
 POC to test cookie stickiness on nginx 1.7+ and real time nginx reload
 
 ## How to use
-This is assuming you are running on a Mac machine with homebrew already installed
-- brew update
-- brew install nginx
-- nginx -h
-  - verify nginx 1.7 or greater is installed
-- nginx -c `pwd`/conf/ninjutsu.conf -p "`pwd`"
+This only runs on linux machines because it requires NGINX+ which is the commercial 
+version of nginx.  If you want to play around with it I suggest that you do the 30 day
+free trial for now but it will require a phone call from a sales person so be warned
+if you do not want to deal with human interaction.
+- install nginx+ - the instructions they provide should suffice
+- sudo ./startup.sh
 - virtualenv venv
 - source venv/bin/activate
 - pip install -r requirements.txt
-- python servers.py -n 3
+- python servers.py
 
 
 ## Killing nginx processes quickly
